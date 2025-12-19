@@ -56,10 +56,10 @@ A Spring Boot application for managing digital wallets with support for deposit 
 ### Deposit Operation
 ![Deposit API](screenshots/postman-1.png)
 
-### Withdraw Operation
+### Get Balance
 ![Withdraw API](screenshots/postman-2.png)
 
-### Get Balance
+### Withdraw Operation
 ![Get Balance API](screenshots/postman-3.png)
 
 ### Error Handling - Wallet Not Found
