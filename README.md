@@ -1,4 +1,86 @@
-# Wallet Service - Local Setup Guide
+# Wallet Service
+
+A Spring Boot application for managing digital wallets with support for deposit and withdrawal operations, featuring pessimistic locking for concurrent transaction handling.
+
+## 🚀 Features
+
+- **Wallet Operations**: Deposit and withdraw funds
+- **Concurrency Control**: Pessimistic locking to handle concurrent transactions
+- **PostgreSQL Database**: Reliable data persistence with Liquibase migrations
+- **RESTful API**: Clean and well-documented endpoints
+- **Comprehensive Error Handling**: Custom exceptions and global error handling
+- **Unit & Integration Tests**: Full test coverage
+- **Postman Collection**: Ready-to-use API collection
+
+---
+
+## 📋 API Endpoints
+
+### 1. Process Wallet Operation (Deposit/Withdraw)
+
+**Endpoint**: `POST /api/v1/wallet`
+
+**Request Body**:
+```json
+{
+  "operationType": "DEPOSIT",
+  "walletId": "550e8400-e29b-41d4-a716-446655440000",
+  "amount": 100.00
+}
+```
+
+**Response**:
+```json
+{
+  "walletId": "550e8400-e29b-41d4-a716-446655440000",
+  "balance": 100.00
+}
+```
+
+### 2. Get Wallet Balance
+
+**Endpoint**: `GET /api/v1/wallets/{walletId}`
+
+**Response**:
+```json
+{
+  "walletId": "550e8400-e29b-41d4-a716-446655440000",
+  "balance": 100.00
+}
+```
+
+---
+
+## 📸 Postman API Screenshots
+
+### Deposit Operation
+![Deposit API](screenshots/postman-1.png)
+
+### Withdraw Operation
+![Withdraw API](screenshots/postman-2.png)
+
+### Get Balance
+![Get Balance API](screenshots/postman-3.png)
+
+### Error Handling - Wallet Not Found
+![Wallet Not Found](screenshots/postman-4.png)
+
+### Error Handling - Insufficient Funds
+![Insufficient Funds](screenshots/postman-5.png)
+
+### Error Handling - Invalid Amount
+![Invalid Amount](screenshots/postman-6.png)
+
+### Error Handling - Invalid Operation Type
+![Invalid Operation](screenshots/postman-7.png)
+
+### Concurrent Transactions Test
+![Concurrent Test 1](screenshots/postman-8.png)
+![Concurrent Test 2](screenshots/postman-9.png)
+
+---
+
+# Local Setup Guide
 
 ## Prerequisites & Software Installation
 
