@@ -71,10 +71,8 @@ A Spring Boot application for managing digital wallets with support for deposit 
 ### Error Handling - Wallet Not Found
 ![Invalid Amount](screenshots/postman-6.png)
 
-### Error Handling - Invalid Operation Type
-![Invalid Operation](screenshots/postman-7.png)
-
 ### Concurrent Transactions Test
+![Invalid Operation](screenshots/postman-7.png)
 ![Concurrent Test 1](screenshots/postman-8.png)
 ![Concurrent Test 2](screenshots/postman-9.png)
 
