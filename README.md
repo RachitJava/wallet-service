@@ -78,6 +78,43 @@ A Spring Boot application for managing digital wallets with support for deposit 
 
 ---
 
+## 🐳 Deployment Options
+
+### Option 1: Docker Deployment (Recommended)
+
+The easiest way to run the application is using Docker and Docker Compose. This method:
+- ✅ No need to install Java, PostgreSQL, or Maven
+- ✅ Runs in isolated containers
+- ✅ Easy configuration via environment variables
+- ✅ Production-ready setup
+
+**Quick Start:**
+```bash
+# Clone the repository
+git clone https://github.com/RachitJava/wallet-service.git
+cd wallet-service
+
+# Configure environment variables
+cp env.template .env
+# Edit .env file if needed
+
+# Start the application
+docker-compose up -d
+
+# View logs
+docker-compose logs -f
+
+# Application will be available at http://localhost:8080
+```
+
+**📚 For detailed Docker documentation, see [DOCKER.md](DOCKER.md)**
+
+### Option 2: Local Development Setup
+
+If you prefer to run the application directly on your machine, follow the detailed local setup guide below.
+
+---
+
 # Local Setup Guide
 
 ## Prerequisites & Software Installation
