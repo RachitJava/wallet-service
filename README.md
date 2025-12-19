@@ -68,7 +68,7 @@ A Spring Boot application for managing digital wallets with support for deposit 
 ### Error Handling - Insufficient Funds
 ![Insufficient Funds](screenshots/postman-5.png)
 
-### Error Handling - Invalid Amount
+### Error Handling - Wallet Not Found
 ![Invalid Amount](screenshots/postman-6.png)
 
 ### Error Handling - Invalid Operation Type
